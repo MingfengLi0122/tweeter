@@ -19,7 +19,22 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ /* nav font setting */
+ nav {
+  font-family: 'Bungee', sans-serif;
+ }
+ /* body font setting */
+ body {
+  font-family: 'Source Sans Pro', sans-serif;
+ }
+/* main display setting */
+ .container {
+   margin:0 5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: inherit;  
+ }
