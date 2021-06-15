@@ -1,0 +1,25 @@
+/* basic setting for nav bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding:1.5em;
+  z-index: 1;
+}
+/* set "Tweet" position */
+nav > span {
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+/* set "Write new tweet" position */
+.newTweet {
+  margin-top: 25px;
+  text-align: center;
+  font: 1em sans-serif;
+}
+/* set icon as red */
+.fa-angle-double-down {
+  color: red;
+}
