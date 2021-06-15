@@ -1,0 +1,27 @@
+.tweetSub {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5%;
+}
+.newTweetText {
+  border-bottom: 5px solid;
+}
+#tweet-text {
+  height: 30px;
+  width: 100%;
+  border: none;
+  background-color: inherit;
+}
+/* tweetSubButton class setting */
+.tweetSubButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+}
+/* tweet button colour setting */
+.tweetSubButton > button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
