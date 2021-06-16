@@ -1,15 +1,19 @@
+/* main section setting */
 .tweetSub {
   display: flex;
   flex-direction: column;
   margin: 0 2.5%;
 }
+/* set the border bold */
 .newTweetText {
   border-bottom: 5px solid;
 }
+/* tweet-text set for label */
 #tweet-text {
-  height: 30px;
+  height: 35px;
   width: 100%;
   border: none;
+  resize: none;
   background-color: inherit;
 }
 /* tweetSubButton class setting */
@@ -23,5 +27,9 @@
 .tweetSubButton > button {
   background-color: #4056A1;
   color: #FFFFFF;
+}
+/* counter red colour setting */
+.redText {
+  color: red;
 }
 
