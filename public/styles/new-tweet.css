@@ -5,7 +5,8 @@
   margin: 0 2.5%;
 }
 /* set the border bold */
-.newTweetText {
+div.newTweetText {
+  margin-top: 2em;
   border-bottom: 5px solid;
 }
 /* tweet-text set for label */
