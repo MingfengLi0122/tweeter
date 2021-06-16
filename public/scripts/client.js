@@ -59,5 +59,15 @@ $(document).ready(function(){
     return $tweet;
   }
   renderTweets(data)
+
+  $("form.tweetSubForm").on("submit", function(event) {
+    event.preventDefault();
+    console.log($(this).serialize());
+    $.ajax("/tweets", {
+      method: "POST",
+      data: $(this).serialize()
+    })
+
+  })
 });
 
