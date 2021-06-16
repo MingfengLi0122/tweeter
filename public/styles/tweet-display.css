@@ -1,14 +1,29 @@
+#tweets-container {
+  display: flex;
+  flex-direction: column;
+}
 /* set ariticle display and the border */
 article.tweet {
   display: flex;
   flex-direction: column;
   border: 5px solid #545149;
-  margin: 7% 0;
+  margin-top: 5%
 }
 /* set ariticle display */
 article.tweet p {
+  font-size: 20px;
   margin: 2% 2.5%;
   border-bottom: 5px solid #545149;
+}
+/* set user name layout */
+div.userName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* set the user name and user image margin */
+div.userName span{
+  margin-left: 0.5em;
 }
 /* set time colour */
 footer .time {
@@ -21,13 +36,13 @@ article.tweet header {
   justify-content: space-between;
 }
 /* set user name display */
-header .userName {
+header .handle {
   color: gainsboro;
 }
 /* set footer display */
 article.tweet footer {
   margin:0 5%;
-  margin-bottom: 2.5%;
+  margin-bottom: 2%;
   display: flex;
   color: #4056A1;
   justify-content: flex-end;
@@ -35,7 +50,7 @@ article.tweet footer {
 /* set margin for icons */
 article.tweet footer i {
   display: flex;
-  margin: 5px;
+  margin: 0.2em;
 }
 /* create box shadow for border */
 article.tweet:hover {
@@ -47,5 +62,6 @@ article.tweet footer i:hover {
 }
 /* set time display position */
 article.tweet .time {
+  font-size: 0.7em;
   margin-right: auto;
 }
