@@ -31,10 +31,11 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
  }
 /* main display setting */
- .container {
-   margin:0 5%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: inherit;  
- }
+.container {
+  margin:0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;  
+}
