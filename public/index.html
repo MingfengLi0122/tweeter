@@ -50,22 +50,21 @@
       </div>
       <br>
       <div>
-        <h2>Your Name</h2>
+        <h2>Coding Noob</h2>
       </div>
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="tweetSub">
-        <h2>Compose Tweet</h2>
         <!-- tweet submition form -->
-        <form class="tweetSubForm" action="/tweets/" method="POST">
+        <form class="tweetSubForm" action="/tweets" method="POST">
           <div class="newTweetText">
             <b><label for="tweet-text">What are you humming about?</label></b>
             <textarea name="text" id="tweet-text"></textarea>
           </div>
           <div class="tweetSubButton">
             <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text"></output>
+            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       <!-- tweets display -->
