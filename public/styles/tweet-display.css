@@ -1,0 +1,52 @@
+/* set ariticle display and the border */
+article.tweet {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #545149;
+  margin: 7% 0;
+}
+/* set ariticle display */
+article.tweet p {
+  margin: 2% 2.5%;
+  border-bottom: 5px solid #545149;
+}
+/* set time colour */
+footer .time {
+  color: #545149;
+}
+/* set header display */
+article.tweet header {
+  margin: 2.5% 5%;
+  display: flex;
+  justify-content: space-between;
+}
+/* set user name display */
+header .userName {
+  color: gainsboro;
+}
+/* set footer display */
+article.tweet footer {
+  margin:0 5%;
+  margin-bottom: 2.5%;
+  display: flex;
+  color: #4056A1;
+  justify-content: flex-end;
+}
+/* set margin for icons */
+article.tweet footer i {
+  display: flex;
+  margin: 5px;
+}
+/* create box shadow for border */
+article.tweet:hover {
+  box-shadow: 8px 8px darkgrey;
+}
+/* set color when icon is hovered */
+article.tweet footer i:hover {
+  color: peru;
+}
+/* set time display position */
+article.tweet .time {
+  
+  margin-right: auto;
+}
