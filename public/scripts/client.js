@@ -13,14 +13,14 @@ $(document).ready(function(){
     <article class="tweet">
       <header>
         <div class="userName">
-        <img src="${tweet.user.avatars}">
-        <span>${tweet.user.name}</span>
+        <img src="${escape(tweet.user.avatars)}">
+        <span>${escape(tweet.user.name)}</span>
         </div>
-        <span class="handle"><b>${tweet.user.handle}</b></span>
+        <span class="handle"><b>${escape(tweet.user.handle)}</b></span>
       </header>
-        <p><b>${tweet.content.text}</b></p>
+         <p><b>${escape(tweet.content.text)}</b></p>
       <footer>
-          <span class="time"><b>${timeago.format(tweet.created_at)}</b></span>
+          <span class="time"><b>${escape(timeago.format(tweet.created_at))}</b></span>
           <i class="fas fa-flag"></i>
           <i class="fas fa-retweet"></i>
           <i class="fas fa-heart"></i>  
@@ -43,12 +43,10 @@ $(document).ready(function(){
   $("form.tweetSubForm").on("submit", function(event) {
     event.preventDefault();
     if (!$("#tweet-text").val()) {
-      alert("Your tweet can not be empty!");
-      return;
+      return $(".errorMessage").text("🥵  Your tweet is empty. 🥵 ").slideDown("slow").css("display", "flex");
     }
     if ($("#tweet-text").val().length > 140) {
-      alert("Your tweet exceeds the maximum characters!");
-      return;
+      return $(".errorMessage").text("🥵  Your tweet is toooooo long. 🥵 ").slideDown("slow");
     } 
     $.ajax("/tweets", {
       method: "POST",
@@ -57,12 +55,23 @@ $(document).ready(function(){
     .then((tweet) => {
       $("#tweet-text").val("");
       $(".counter").val(140);
+     // $(".errorMessage").slideUp("slow");
       loadTweets(tweet);
     })
     .catch((err) => {
       console.log("Error message: ", err);
     })
   })
+  // slideup the error message when user starts typing
+  $("form.tweetSubForm").on("keydown", function(event) {
+    $(".errorMessage").slideUp("slow");
+  })
+  //prevent malicous input by implementing escape
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   loadTweets();
 });
 
