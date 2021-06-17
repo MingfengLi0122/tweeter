@@ -25,6 +25,8 @@ body {
  /* nav font setting */
  nav {
   font-family: 'Bungee', sans-serif;
+  background-color: #a8cef1;
+  background-image: url("https://www.transparenttextures.com/patterns/translucent-fibres.png");
  }
  /* body font setting */
  body {
@@ -38,4 +40,42 @@ body {
   align-items: stretch;
   justify-content: center;
   background-color: inherit;  
+}
+/* media queries */
+@media only screen and (min-width: 1025px) {
+  nav {
+    background-color: #4056A1;
+  }
+  #userInfo {
+    padding-top: 2em;
+    width: 35vw;
+    background-color: #4056A1;
+  }
+  h2 {
+    color: white;
+    display: inline;
+    flex-direction: row;
+    white-space: nowrap ;  
+  }
+  #dynDisplay {
+    margin-top: 2.5em;
+    margin-left: 5em;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  main.container {
+    margin-top: 5em;
+    width: 80%;
+    min-width: 330px;
+  }
+}
+/* display setting for tablets */
+@media only screen and (max-width: 1024px) {
+  nav {
+    background-color: #a8cef1;
+  }
+  #userInfo {
+    background-color: #a8cef1;
+  }
 }
