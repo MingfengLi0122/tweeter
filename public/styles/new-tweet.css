@@ -13,6 +13,7 @@ main div.newTweetText {
 #tweet-text {
   height: 35px;
   width: 100%;
+  margin-top: 3.5%;
   border: none;
   resize: none;
   background-color: inherit;
@@ -29,6 +30,7 @@ main .tweetSubButton > button {
   background-color: #4056A1;
   color: #FFFFFF;
 }
+/* set error message display */
 main .errorMessage {
   height: 70px;
   color: aliceblue;
