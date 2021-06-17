@@ -1,11 +1,11 @@
 /* main section setting */
-.tweetSub {
+main .tweetSub {
   display: flex;
   flex-direction: column;
   margin: 0 2.5%;
 }
 /* set the border bold */
-div.newTweetText {
+main div.newTweetText {
   margin-top: 2em;
   border-bottom: 5px solid;
 }
@@ -18,19 +18,29 @@ div.newTweetText {
   background-color: inherit;
 }
 /* tweetSubButton class setting */
-.tweetSubButton {
+main .tweetSubButton {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
 }
 /* tweet button colour setting */
-.tweetSubButton > button {
+main .tweetSubButton > button {
   background-color: #4056A1;
   color: #FFFFFF;
 }
+main .errorMessage {
+  height: 70px;
+  color: aliceblue;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5%;
+  border: solid red 5px;
+  background-color: darkred;
+}
 /* counter red colour setting */
-.redText {
+main .redText {
   color: red;
 }
 
