@@ -58,16 +58,15 @@ body {
     white-space: nowrap ;  
   }
   #dynDisplay {
-    margin-top: 2.5rem;
-    margin-left: 5rem;
+    margin: 9rem;
     display: flex;
     align-items: start;
     justify-content: space-between;
   }
   main.container {
     margin-top: 5em;
-    width: 70%;
-    max-width: 950px;
+    width: 80%;
+    min-width: 55vw;
   }
 }
 /* display setting for tablets */
@@ -81,10 +80,13 @@ body {
 }
 /* dispay setting for mobile */
 @media only screen and (max-width: 570px) {
+  nav {
+    font-size: 0.9rem;
+  }
   nav > span {
-    font-size: 2rem;
+    font-size: 0.7rem;
   }
   .container {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
