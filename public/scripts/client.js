@@ -46,7 +46,7 @@ $(document).ready(function() {
       return $(".errorMessage").text("🥵  Your tweet is empty. 🥵 ").slideDown("slow").css("display", "flex");
     }
     if ($("#tweet-text").val().length > 140) {
-      return $(".errorMessage").text("🥵  Your tweet is toooooo long. 🥵 ").slideDown("slow");
+      return $(".errorMessage").text("🥵  Your tweet is toooooo long. 🥵 ").slideDown("slow").css("display", "flex");;
     } 
     $.ajax("/tweets", {
       method: "POST",
