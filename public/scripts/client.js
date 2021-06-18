@@ -1,15 +1,15 @@
-$(document).ready(function(){
+$(document).ready(function() {
   //append array of tweets data into the #tweets-container
   const renderTweets = function(data) {
     $("#tweets-container").empty();
-    for (let tweet of data) {
-      let tweetElement = createTweetElement(tweet);
+    for (const tweet of data) {
+      const tweetElement = createTweetElement(tweet);
       $("#tweets-container").prepend(tweetElement);
     }
   }
   //set tweet object in database to tweet articles in HTML
   const createTweetElement = function(tweet) {
-    let $tweet = $(`
+    const $tweet = $(`
     <article class="tweet">
       <header>
         <div class="userName">
@@ -55,7 +55,6 @@ $(document).ready(function(){
     .then((tweet) => {
       $("#tweet-text").val("");
       $(".counter").val(140);
-     // $(".errorMessage").slideUp("slow");
       loadTweets(tweet);
     })
     .catch((err) => {
@@ -66,7 +65,7 @@ $(document).ready(function(){
   $("form.tweetSubForm").on("keydown", function(event) {
     $(".errorMessage").slideUp("slow");
   })
-  //prevent malicous input by implementing escape
+  //prevent malicous input by implementing escape function
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
