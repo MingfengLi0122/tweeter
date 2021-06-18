@@ -68,3 +68,10 @@ article.tweet .time {
   font-size: 0.7em;
   margin-right: auto;
 }
+div.tweetIcon {
+  position: sticky;
+  display: none;
+  color: red;
+  margin: 2em;
+  justify-content: flex-end;
+}
