@@ -1,26 +1,30 @@
+form.tweetSubForm {
+  display: none;
+}
 /* main section setting */
 main .tweetSub {
   display: flex;
   flex-direction: column;
-  margin: 0 2.5%;
+  margin: 0 1.5em;
 }
 /* set the border bold */
 main div.newTweetText {
-  margin-top: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
   border-bottom: 5px solid;
 }
 /* tweet-text set for label */
 #tweet-text {
-  height: 35px;
+  height: 1.5em;
   width: 100%;
-  margin-top: 3.5%;
+  margin-top: 0.2em;
   border: none;
   resize: none;
   background-color: inherit;
 }
 /* tweetSubButton class setting */
 main .tweetSubButton {
-  margin-top: 10px;
+  margin-top: 0.7em;
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
@@ -32,7 +36,7 @@ main .tweetSubButton > button {
 }
 /* set error message display */
 main .errorMessage {
-  height: 70px;
+  height: 3em;
   color: aliceblue;
   display: none;
   justify-content: center;
