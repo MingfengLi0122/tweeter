@@ -23,7 +23,6 @@ Tweeter is a single-page Twitter clone which implemented with HTML, CSS, JS, jQu
 
 ## Dependencies
 
-- Express
 - Node 5.10.x or above
 - Body-parser 1.15.2
 - Chance 1.0.2
