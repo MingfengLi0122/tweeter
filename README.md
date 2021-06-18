@@ -1,9 +1,9 @@
-# Tweeter Clone Projec
+# Tweeter Clone Project
 Tweeter is a single-page Twitter clone which implemented with HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills. The server allows users to request and post tweets with AJAX to simulate twitter funtionality.
 
 # Final Product
-![mobile UI]()
-![mobile UI]()
+![mobile UI](https://github.com/MingfengLi0122/tweeter/blob/master/public/images/mobile.png)
+![mobile UI](https://github.com/MingfengLi0122/tweeter/blob/master/public/images/desktop.png)
 
 # Features
 - Dynamic user tweets information display section
