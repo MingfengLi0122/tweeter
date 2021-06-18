@@ -2,9 +2,9 @@
 $(document).ready(function() {
   const input = document.querySelector("input");
   $("#tweet-text").on("input", function(e) {
-    let chars = $(this).val().length;
-    let charsLeft = 140 - chars;
-    let counter = $(this).parent().next("div").children(".counter").text(charsLeft);
+    const chars = $(this).val().length;
+    const charsLeft = 140 - chars;
+    const counter = $(this).parent().next("div").children(".counter").text(charsLeft);
     if (charsLeft < 0) {
       counter.addClass("redText");
     } else {
